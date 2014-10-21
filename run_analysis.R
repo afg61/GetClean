@@ -37,7 +37,7 @@ ActivityData <- rbind(Train,Test)
 
 # Read in data set of feature names and use these features names to
 # name the features columns in the data set. First column in the
-# data set is the subject id, second column in the code for the activity
+# data set is the subject id, second column is the code for the activity
 # and the remaining columns are the 561 features listed in the
 # features data set
 features <- read.table("UCI HAR Dataset\\features.txt")
@@ -55,9 +55,7 @@ colnames(ActivityData) <- varnames
 # for each measurement. Variables with the word "mean" anywhere in
 # the feature label are considered mean measurements and variables
 # with "std" anywhere in the feature label are considered standard
-# deviation measurements. The toupper() function is used to make
-# certain both uppercase and lowercase instances of "mean" and "std"
-# will be found
+# deviation measurements.
 #####################################################################
 
 # Find column indices for variables with "mean" in the variable name
@@ -67,7 +65,8 @@ meanvars <- grep("mean",varnames)
 stdvars <- grep("std",varnames)
 
 # Use vectors of indices created above to select columns for mean and 
-# standard deviation variables
+# standard deviation variables. Also include columns 1 and 2 because
+# these columns have data for subject id and activity
 Activity_Mean_Std <- ActivityData[ , c(1, 2, meanvars,stdvars)]
 
 
@@ -75,6 +74,7 @@ Activity_Mean_Std <- ActivityData[ , c(1, 2, meanvars,stdvars)]
 #  Add descriptive activity names to the activities in the data set
 #####################################################################
 
+# File activity_labels.txt has labels for activity levels
 activity_labels <- read.table("UCI HAR Dataset\\activity_labels.txt", as.is=TRUE)
 
 # Convert activity variable to a factor and assign labels to the levels
@@ -89,6 +89,8 @@ Activity_Mean_Std$activity <- factor(Activity_Mean_Std$activity,
 #####################################################################
 
 # Average of each variable for each activity for each subject
+# ddply function is used to summarize the data set so need to
+# load the plyr package
 library(plyr)
 Activity_Summary <- ddply(Activity_Mean_Std, .(subject, activity), numcolwise(mean))
 
