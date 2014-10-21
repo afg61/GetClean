@@ -23,7 +23,100 @@ Steps performed to create the summary data set Activity_Summary.txt from the raw
 - The data were written to a text file Activity_Summary.txt to make the data available to a wide array of users working with a variety of software packages.
 
 ## Variable List
-|Variable Name|Range|Measuring Device| Other Information|Summary Type|| ------------- |:-------------:| -----:|--------|--------||subject|0-30|NA| NA|NA||activity|1-6|NA| NA|NA||tbodyaccmeanx|[-1, 1]|accelerometer| body acceleration|mean||tbodyaccmeany|[-1, 1]|accelerometer| body acceleration|mean||tbodyaccmeanz|[-1, 1]|accelerometer| body acceleration|mean||tgravityaccmeanx|[-1, 1]|accelerometer| gravity|mean||tgravityaccmeany|[-1, 1]|accelerometer| gravity|mean||tgravityaccmeanz|[-1, 1]|accelerometer| gravity|mean||tbodyaccjerkmeanx|[-1, 1]|accelerometer| jerk|mean||tbodyaccjerkmeany|[-1, 1]|accelerometer| jerk|mean||tbodyaccjerkmeanz|[-1, 1]|accelerometer| body acceleration|mean||tbodygyromeanx|[-1, 1]|gyroscope| body acceleration|mean||tbodygyromeany|[-1, 1]|gyroscope| body acceleration|mean||tbodygyromeanz|[-1, 1]|gyroscope| body acceleration|mean||tbodygyrojerkmeanx|[-1, 1]|gyroscope| jerk|mean||tbodygyrojerkmeany|[-1, 1]|gyroscope| jerk|mean||tbodygyrojerkmeanz|[-1, 1]|gyroscope| jerk|mean||tbodyaccmagmean|[-1, 1]|accelerometer| signal magnitude|mean||tgravityaccmagmean|[-1, 1]|accelerometer| signal magnitude|mean||tbodyaccjerkmagmean|[-1, 1]|accelerometer| signal magnitude|mean||tbodygyromagmean|[-1, 1]|gyroscope| signal magnitude|mean||tbodygyrojerkmagmean|[-1, 1]|gyroscope| signal magnitude|mean||fbodyaccmeanx|[-1, 1]|accelerometer| body acceleration|mean||fbodyaccmeany|[-1, 1]|accelerometer| body acceleration|mean||fbodyaccmeanz|[-1, 1]|accelerometer| body acceleration|mean||fbodyaccmeanfreqx|[-1, 1]|accelerometer| body acceleration|mean frequency||fbodyaccmeanfreqy|[-1, 1]|accelerometer| body acceleration|mean frequency||fbodyaccmeanfreqz|[-1, 1]|accelerometer| body acceleration|mean frequency||fbodyaccjerkmeanx|[-1, 1]|accelerometer| jerk|mean||fbodyaccjerkmeany|[-1, 1]|accelerometer| jerk|mean||fbodyaccjerkmeanz|[-1, 1]|accelerometer| jerk|mean||fbodyaccjerkmeanfreqx|[-1, 1]|accelerometer| jerk|mean frequency||fbodyaccjerkmeanfreqy|[-1, 1]|accelerometer| jerk|mean frequency||fbodyaccjerkmeanfreqz|[-1, 1]|accelerometer| jerk|mean frequency||fbodygyromeanx|[-1, 1]|gyroscope| body acceleration|mean||fbodygyromeany|[-1, 1]|gyroscope| body acceleration|mean||fbodygyromeanz|[-1, 1]|gyroscope| body acceleration|mean||fbodygyromeanfreqx|[-1, 1]|gyroscope| body acceleration|mean frequency||fbodygyromeanfreqy|[-1, 1]|gyroscope| body acceleration|mean frequency||fbodygyromeanfreqz|[-1, 1]|gyroscope| body acceleration|mean frequency||fbodyaccmagmean|[-1, 1]|accelerometer| body acceleration|mean||fbodyaccmagmeanfreq|[-1, 1]|accelerometer| body acceleration|mean||fbodybodyaccjerkmagmean|[-1, 1]|accelerometer| jerk|mean||fbodybodyaccjerkmagmeanfreq|[-1, 1]|accelerometer| jerk|mean frequency||fbodybodygyromagmean|[-1, 1]|gyroscope| signal magnitude|mean||fbodybodygyromagmeanfreq|[-1, 1]|gyroscope| signal magnitude|mean frequency||fbodybodygyrojerkmagmean|[-1, 1]|gyroscope| signal magnitude|mean||fbodybodygyrojerkmagmeanfreq|[-1, 1]|gyroscope| signal magnitude|mean frequency||angletbodyaccmeangravity|[-1, 1]|accelerometer| angle|mean||angletbodyaccjerkmeangravitymean|[-1, 1]|accelerometer| angle|mean||angletbodygyromeangravitymean|[-1, 1]|gyroscope| angle|mean||angletbodygyrojerkmeangravitymean|[-1, 1]|gyroscope| angle|mean||anglexgravitymean|[-1, 1]|NA| angle|mean||angleygravitymean|[-1, 1]|NA| angle|mean||anglezgravitymean|[-1, 1]|NA| angle|mean||tbodyaccstdx|[-1, 1]|accelerometer| body acceleration|std||tbodyaccstdy|[-1, 1]|accelerometer| body acceleration|std||tbodyaccstdz|[-1, 1]|accelerometer| body acceleration|std||tgravityaccstdx|[-1, 1]|accelerometer| gravity|std||tgravityaccstdy|[-1, 1]|accelerometer| gravity|std||tgravityaccstdz|[-1, 1]|accelerometer| gravity|std||tbodyaccjerkstdx|[-1, 1]|accelerometer| jerk|std||tbodyaccjerkstdy|[-1, 1]|accelerometer| jerk|std||tbodyaccjerkstdz|[-1, 1]|accelerometer| jerk|std||tbodygyrostdx|[-1, 1]|gyroscope| body acceleration|std||tbodygyrostdy|[-1, 1]|gyroscope| body acceleration|std||tbodygyrostdz|[-1, 1]|gyroscope| body acceleration|std||tbodygyrojerkstdx|[-1, 1]|gyroscope| jerk|std||tbodygyrojerkstdy|[-1, 1]|gyroscope| jerk|std||tbodygyrojerkstdz|[-1, 1]|gyroscope| jerk|std||tbodyaccmagstd|[-1, 1]|accelerometer| signal magnitude|std||tgravityaccmagstd|[-1, 1]|accelerometer| signal magnitude|std||tbodyaccjerkmagstd|[-1, 1]|accelerometer| signal magnitude|std||tbodygyromagstd|[-1, 1]|gyroscope| signal magnitude|std||tbodygyrojerkmagstd|[-1, 1]|gyroscope| signal magnitude|std||fbodyaccstdx|[-1, 1]|accelerometer| body acceleration|std||fbodyaccstdy|[-1, 1]|accelerometer| body acceleration|std||fbodyaccstdz|[-1, 1]|accelerometer| body acceleration|std||fbodyaccjerkstdx|[-1, 1]|accelerometer| jerk|std||fbodyaccjerkstdy|[-1, 1]|accelerometer| jerk|std||fbodyaccjerkstdz|[-1, 1]|accelerometer| jerk|std||fbodygyrostdx|[-1, 1]|gyroscope| body acceleration|std||fbodygyrostdy|[-1, 1]|gyroscope| body acceleration|std||fbodygyrostdz|[-1, 1]|gyroscope| body acceleration|std||fbodyaccmagstd|[-1, 1]|accelerometer| signal magnitude|std||fbodybodyaccjerkmagstd|[-1, 1]|accelerometer| signal magnitude|std||fbodybodygyromagstd|[-1, 1]|gyroscope| signal magnitude|std||fbodybodygyrojerkmagstd|[-1, 1]|gyroscope| signal magnitude|std|
+|Variable Name|Range|Measuring Device| Other Information|Summary Type|
+| ------------- |-------------| -----|--------|--------|
+|subject|0-30|NA| NA|NA|
+|activity|1-6|NA|See levels list|NA|
+|tbodyaccmeanx|[-1, 1]|accelerometer| body acceleration|mean|
+|tbodyaccmeany|[-1, 1]|accelerometer| body acceleration|mean|
+|tbodyaccmeanz|[-1, 1]|accelerometer| body acceleration|mean|
+|tgravityaccmeanx|[-1, 1]|accelerometer| gravity|mean|
+|tgravityaccmeany|[-1, 1]|accelerometer| gravity|mean|
+|tgravityaccmeanz|[-1, 1]|accelerometer| gravity|mean|
+|tbodyaccjerkmeanx|[-1, 1]|accelerometer| jerk|mean|
+|tbodyaccjerkmeany|[-1, 1]|accelerometer| jerk|mean|
+|tbodyaccjerkmeanz|[-1, 1]|accelerometer| body acceleration|mean|
+|tbodygyromeanx|[-1, 1]|gyroscope| body acceleration|mean|
+|tbodygyromeany|[-1, 1]|gyroscope| body acceleration|mean|
+|tbodygyromeanz|[-1, 1]|gyroscope| body acceleration|mean|
+|tbodygyrojerkmeanx|[-1, 1]|gyroscope| jerk|mean|
+|tbodygyrojerkmeany|[-1, 1]|gyroscope| jerk|mean|
+|tbodygyrojerkmeanz|[-1, 1]|gyroscope| jerk|mean|
+|tbodyaccmagmean|[-1, 1]|accelerometer| signal magnitude|mean|
+|tgravityaccmagmean|[-1, 1]|accelerometer| signal magnitude|mean|
+|tbodyaccjerkmagmean|[-1, 1]|accelerometer| signal magnitude|mean|
+|tbodygyromagmean|[-1, 1]|gyroscope| signal magnitude|mean|
+|tbodygyrojerkmagmean|[-1, 1]|gyroscope| signal magnitude|mean|
+|fbodyaccmeanx|[-1, 1]|accelerometer| body acceleration|mean|
+|fbodyaccmeany|[-1, 1]|accelerometer| body acceleration|mean|
+|fbodyaccmeanz|[-1, 1]|accelerometer| body acceleration|mean|
+|fbodyaccmeanfreqx|[-1, 1]|accelerometer| body acceleration|mean frequency|
+|fbodyaccmeanfreqy|[-1, 1]|accelerometer| body acceleration|mean frequency|
+|fbodyaccmeanfreqz|[-1, 1]|accelerometer| body acceleration|mean frequency|
+|fbodyaccjerkmeanx|[-1, 1]|accelerometer| jerk|mean|
+|fbodyaccjerkmeany|[-1, 1]|accelerometer| jerk|mean|
+|fbodyaccjerkmeanz|[-1, 1]|accelerometer| jerk|mean|
+|fbodyaccjerkmeanfreqx|[-1, 1]|accelerometer| jerk|mean frequency|
+|fbodyaccjerkmeanfreqy|[-1, 1]|accelerometer| jerk|mean frequency|
+|fbodyaccjerkmeanfreqz|[-1, 1]|accelerometer| jerk|mean frequency|
+|fbodygyromeanx|[-1, 1]|gyroscope| body acceleration|mean|
+|fbodygyromeany|[-1, 1]|gyroscope| body acceleration|mean|
+|fbodygyromeanz|[-1, 1]|gyroscope| body acceleration|mean|
+|fbodygyromeanfreqx|[-1, 1]|gyroscope| body acceleration|mean frequency|
+|fbodygyromeanfreqy|[-1, 1]|gyroscope| body acceleration|mean frequency|
+|fbodygyromeanfreqz|[-1, 1]|gyroscope| body acceleration|mean frequency|
+|fbodyaccmagmean|[-1, 1]|accelerometer| body acceleration|mean|
+|fbodyaccmagmeanfreq|[-1, 1]|accelerometer| body acceleration|mean|
+|fbodybodyaccjerkmagmean|[-1, 1]|accelerometer| jerk|mean|
+|fbodybodyaccjerkmagmeanfreq|[-1, 1]|accelerometer| jerk|mean frequency|
+|fbodybodygyromagmean|[-1, 1]|gyroscope| signal magnitude|mean|
+|fbodybodygyromagmeanfreq|[-1, 1]|gyroscope| signal magnitude|mean frequency|
+|fbodybodygyrojerkmagmean|[-1, 1]|gyroscope| signal magnitude|mean|
+|fbodybodygyrojerkmagmeanfreq|[-1, 1]|gyroscope| signal magnitude|mean frequency|
+|angletbodyaccmeangravity|[-1, 1]|accelerometer| angle|mean|
+|angletbodyaccjerkmeangravitymean|[-1, 1]|accelerometer| angle|mean|
+|angletbodygyromeangravitymean|[-1, 1]|gyroscope| angle|mean|
+|angletbodygyrojerkmeangravitymean|[-1, 1]|gyroscope| angle|mean|
+|anglexgravitymean|[-1, 1]|NA| angle|mean|
+|angleygravitymean|[-1, 1]|NA| angle|mean|
+|anglezgravitymean|[-1, 1]|NA| angle|mean|
+|tbodyaccstdx|[-1, 1]|accelerometer| body acceleration|std|
+|tbodyaccstdy|[-1, 1]|accelerometer| body acceleration|std|
+|tbodyaccstdz|[-1, 1]|accelerometer| body acceleration|std|
+|tgravityaccstdx|[-1, 1]|accelerometer| gravity|std|
+|tgravityaccstdy|[-1, 1]|accelerometer| gravity|std|
+|tgravityaccstdz|[-1, 1]|accelerometer| gravity|std|
+|tbodyaccjerkstdx|[-1, 1]|accelerometer| jerk|std|
+|tbodyaccjerkstdy|[-1, 1]|accelerometer| jerk|std|
+|tbodyaccjerkstdz|[-1, 1]|accelerometer| jerk|std|
+|tbodygyrostdx|[-1, 1]|gyroscope| body acceleration|std|
+|tbodygyrostdy|[-1, 1]|gyroscope| body acceleration|std|
+|tbodygyrostdz|[-1, 1]|gyroscope| body acceleration|std|
+|tbodygyrojerkstdx|[-1, 1]|gyroscope| jerk|std|
+|tbodygyrojerkstdy|[-1, 1]|gyroscope| jerk|std|
+|tbodygyrojerkstdz|[-1, 1]|gyroscope| jerk|std|
+|tbodyaccmagstd|[-1, 1]|accelerometer| signal magnitude|std|
+|tgravityaccmagstd|[-1, 1]|accelerometer| signal magnitude|std|
+|tbodyaccjerkmagstd|[-1, 1]|accelerometer| signal magnitude|std|
+|tbodygyromagstd|[-1, 1]|gyroscope| signal magnitude|std|
+|tbodygyrojerkmagstd|[-1, 1]|gyroscope| signal magnitude|std|
+|fbodyaccstdx|[-1, 1]|accelerometer| body acceleration|std|
+|fbodyaccstdy|[-1, 1]|accelerometer| body acceleration|std|
+|fbodyaccstdz|[-1, 1]|accelerometer| body acceleration|std|
+|fbodyaccjerkstdx|[-1, 1]|accelerometer| jerk|std|
+|fbodyaccjerkstdy|[-1, 1]|accelerometer| jerk|std|
+|fbodyaccjerkstdz|[-1, 1]|accelerometer| jerk|std|
+|fbodygyrostdx|[-1, 1]|gyroscope| body acceleration|std|
+|fbodygyrostdy|[-1, 1]|gyroscope| body acceleration|std|
+|fbodygyrostdz|[-1, 1]|gyroscope| body acceleration|std|
+|fbodyaccmagstd|[-1, 1]|accelerometer| signal magnitude|std|
+|fbodybodyaccjerkmagstd|[-1, 1]|accelerometer| signal magnitude|std|
+|fbodybodygyromagstd|[-1, 1]|gyroscope| signal magnitude|std|
+|fbodybodygyrojerkmagstd|[-1, 1]|gyroscope| signal magnitude|std|
+
+Levels list for activity variable: 1=walking, 2=walking upstairs, 3=walking downstairs, 4=sitting, 5=standing, 6=laying
+
+
 ## Appendix A 
 ### Description of the raw data provided by the original data collectors
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
