@@ -42,6 +42,11 @@ ActivityData <- rbind(Train,Test)
 # features data set
 features <- read.table("UCI HAR Dataset\\features.txt")
 varnames <- c("subject", "activity", as.character(features$V2))
+
+# Clean up varnames to make them easier to use -- remove special
+# characters and convert to all lowercase
+varnames <- tolower(gsub("[[:punct:]]", "", varnames))
+
 colnames(ActivityData) <- varnames
 
 
@@ -56,10 +61,10 @@ colnames(ActivityData) <- varnames
 #####################################################################
 
 # Find column indices for variables with "mean" in the variable name
-meanvars <- grep("MEAN",toupper(varnames))
+meanvars <- grep("mean",varnames)
 
 # Find column indices for variables with "std" in the variable name
-stdvars <- grep("STD",toupper(varnames))
+stdvars <- grep("std",varnames)
 
 # Use vectors of indices created above to select columns for mean and 
 # standard deviation variables
