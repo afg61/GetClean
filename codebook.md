@@ -9,7 +9,8 @@ Raw data for the Smartphone Human Activity Recognition Summary Data Set (Activit
 Raw data used to create the summary data set include: a subject id (1-30), a code to identify the activity the subject was performing (1=walking, 2=walking upstairs, 3=walking downstairs, 4=sitting, 5=standing, 6=laying), and 561 time and frequency domain variables measured by the smartphone while the subject performed that activity. Feature variables are normalized and bounded within [-1,1].
 The data authors provided the raw data split into training and test sets.  The summary data set combined all of these data to create a summary data file with summary measures for all 30 participants.  Data for the summary data set were taken from the following files: subject id (from subject_train.txt and subject_test.txt), activity code (from y_train.txt and y_test.txt), and feature variables (from x_train.txt and x_test.txt).
 
-Raw data were downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip on October 20, 2014.
+Raw data were downloaded from on October 20 from
+ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 ## Processed Data
 Steps performed to create the summary data set Activity_Summary.txt from the raw data:
