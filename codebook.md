@@ -15,14 +15,15 @@ Raw data were downloaded from on October 20 from
 ## Processed Data
 Steps performed to create the summary data set Activity_Summary.txt from the raw data:
 
-- Combine data from multiple files to create a single file with subject id, activity id, and feature data for all 30 subjects.
-- Add column names to the data set to identify the columns.  The original study authors provided a test file features.txt with descriptive names for the features that could be used as column names.
+- Combine data from multiple files to create a single file with subject id, activity id, and feature data for all 30 subjects. This involved combining 3 data frames for the training group (with subject id, activity code, and feature data) and 3 data frames for the test group (with subject id, activity, and feature data) then combining the training and test data sets into a single data set.
+- Add column names to the data set to identify the columns.  The original study authors provided a text file features.txt with descriptive names for the features that could be used as column names.
 - Select only the features involving mean or standard deviation measurements.  It was assumed that all features with either “mean” or “std” in the feature description were of interest.
 - The study authors provided descriptive labels for the activity codes in a text file activity_labels.txt.  The activity variable was converted to a factor with 6 levels and the descriptive labels were used as factor levels to make it clear to data users what the activities were.
-- The original data set included multiple observations for each subject performing each of the six activities.  The summary data set averages across these multiple observations to provide an average measurement for each mean and standard deviation feature for each subject and each activity. 
+- The original data set included multiple observations for each subject performing each of the six activities.  The summary data set averages across these multiple observations to provide an average measurement for each included feature for each subject and each activity. 
 - The data were written to a text file Activity_Summary.txt to make the data available to a wide array of users working with a variety of software packages.
 
-## Appendix A: Description of the raw data provided by the original data collectors
+## Appendix A 
+### Description of the raw data provided by the original data collectors
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 Each record includes:
@@ -32,7 +33,7 @@ Each record includes:
 - The activity label 
 - An identifier of the subject who carried out the experiment.
 
-### The dataset includes the following files:
+The dataset includes the following files:
 - 'README.txt'
 - 'features_info.txt': Shows information about the variables used on the feature vector.
 - 'features.txt': List of all features.
@@ -49,13 +50,13 @@ The following files are available for the train and test data. Their description
 - 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
-### Notes 
+Notes 
 - Features are normalized and bounded within [-1,1].
 - Each feature vector is a row on the text file.
 
 For more information about this dataset contact: activityrecognition@smartlab.ws
 
-### License
+License
 Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
