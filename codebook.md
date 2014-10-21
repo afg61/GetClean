@@ -22,6 +22,98 @@ Steps performed to create the summary data set Activity_Summary.txt from the raw
 - The original data set included multiple observations for each subject performing each of the six activities.  The summary data set averages across these multiple observations to provide an average measurement for each included feature for each subject and each activity. 
 - The data were written to a text file Activity_Summary.txt to make the data available to a wide array of users working with a variety of software packages.
 
+## Variable List
+Variable Name|Range|Measuring Device| Other Information|Summary Type
+subject|0-30|NA| NA|NA
+activity|1-6|NA| NA|NA
+tbodyaccmeanx|[-1, 1]|accelerometer| body acceleration|mean
+tbodyaccmeany|[-1, 1]|accelerometer| body acceleration|mean
+tbodyaccmeanz|[-1, 1]|accelerometer| body acceleration|mean
+tgravityaccmeanx|[-1, 1]|accelerometer| gravity|mean
+tgravityaccmeany|[-1, 1]|accelerometer| gravity|mean
+tgravityaccmeanz|[-1, 1]|accelerometer| gravity|mean
+tbodyaccjerkmeanx|[-1, 1]|accelerometer| jerk|mean
+tbodyaccjerkmeany|[-1, 1]|accelerometer| jerk|mean
+tbodyaccjerkmeanz|[-1, 1]|accelerometer| body acceleration|mean
+tbodygyromeanx|[-1, 1]|gyroscope| body acceleration|mean
+tbodygyromeany|[-1, 1]|gyroscope| body acceleration|mean
+tbodygyromeanz|[-1, 1]|gyroscope| body acceleration|mean
+tbodygyrojerkmeanx|[-1, 1]|gyroscope| jerk|mean
+tbodygyrojerkmeany|[-1, 1]|gyroscope| jerk|mean
+tbodygyrojerkmeanz|[-1, 1]|gyroscope| jerk|mean
+tbodyaccmagmean|[-1, 1]|accelerometer| signal magnitude|mean
+tgravityaccmagmean|[-1, 1]|accelerometer| signal magnitude|mean
+tbodyaccjerkmagmean|[-1, 1]|accelerometer| signal magnitude|mean
+tbodygyromagmean|[-1, 1]|gyroscope| signal magnitude|mean
+tbodygyrojerkmagmean|[-1, 1]|gyroscope| signal magnitude|mean
+fbodyaccmeanx|[-1, 1]|accelerometer| body acceleration|mean
+fbodyaccmeany|[-1, 1]|accelerometer| body acceleration|mean
+fbodyaccmeanz|[-1, 1]|accelerometer| body acceleration|mean
+fbodyaccmeanfreqx|[-1, 1]|accelerometer| body acceleration|mean frequency
+fbodyaccmeanfreqy|[-1, 1]|accelerometer| body acceleration|mean frequency
+fbodyaccmeanfreqz|[-1, 1]|accelerometer| body acceleration|mean frequency
+fbodyaccjerkmeanx|[-1, 1]|accelerometer| jerk|mean
+fbodyaccjerkmeany|[-1, 1]|accelerometer| jerk|mean
+fbodyaccjerkmeanz|[-1, 1]|accelerometer| jerk|mean
+fbodyaccjerkmeanfreqx|[-1, 1]|accelerometer| jerk|mean frequency
+fbodyaccjerkmeanfreqy|[-1, 1]|accelerometer| jerk|mean frequency
+fbodyaccjerkmeanfreqz|[-1, 1]|accelerometer| jerk|mean frequency
+fbodygyromeanx|[-1, 1]|gyroscope| body acceleration|mean
+fbodygyromeany|[-1, 1]|gyroscope| body acceleration|mean
+fbodygyromeanz|[-1, 1]|gyroscope| body acceleration|mean
+fbodygyromeanfreqx|[-1, 1]|gyroscope| body acceleration|mean frequency
+fbodygyromeanfreqy|[-1, 1]|gyroscope| body acceleration|mean frequency
+fbodygyromeanfreqz|[-1, 1]|gyroscope| body acceleration|mean frequency
+fbodyaccmagmean|[-1, 1]|accelerometer| body acceleration|mean
+fbodyaccmagmeanfreq|[-1, 1]|accelerometer| body acceleration|mean
+fbodybodyaccjerkmagmean|[-1, 1]|accelerometer| jerk|mean
+fbodybodyaccjerkmagmeanfreq|[-1, 1]|accelerometer| jerk|mean frequency
+fbodybodygyromagmean|[-1, 1]|gyroscope| signal magnitude|mean
+fbodybodygyromagmeanfreq|[-1, 1]|gyroscope| signal magnitude|mean frequency
+fbodybodygyrojerkmagmean|[-1, 1]|gyroscope| signal magnitude|mean
+fbodybodygyrojerkmagmeanfreq|[-1, 1]|gyroscope| signal magnitude|mean frequency
+angletbodyaccmeangravity|[-1, 1]|accelerometer| angle|mean
+angletbodyaccjerkmeangravitymean|[-1, 1]|accelerometer| angle|mean
+angletbodygyromeangravitymean|[-1, 1]|gyroscope| angle|mean
+angletbodygyrojerkmeangravitymean|[-1, 1]|gyroscope| angle|mean
+anglexgravitymean|[-1, 1]|NA| angle|mean
+angleygravitymean|[-1, 1]|NA| angle|mean
+anglezgravitymean|[-1, 1]|NA| angle|mean
+tbodyaccstdx|[-1, 1]|accelerometer| body acceleration|std
+tbodyaccstdy|[-1, 1]|accelerometer| body acceleration|std
+tbodyaccstdz|[-1, 1]|accelerometer| body acceleration|std
+tgravityaccstdx|[-1, 1]|accelerometer| gravity|std
+tgravityaccstdy|[-1, 1]|accelerometer| gravity|std
+tgravityaccstdz|[-1, 1]|accelerometer| gravity|std
+tbodyaccjerkstdx|[-1, 1]|accelerometer| jerk|std
+tbodyaccjerkstdy|[-1, 1]|accelerometer| jerk|std
+tbodyaccjerkstdz|[-1, 1]|accelerometer| jerk|std
+tbodygyrostdx|[-1, 1]|gyroscope| body acceleration|std
+tbodygyrostdy|[-1, 1]|gyroscope| body acceleration|std
+tbodygyrostdz|[-1, 1]|gyroscope| body acceleration|std
+tbodygyrojerkstdx|[-1, 1]|gyroscope| jerk|std
+tbodygyrojerkstdy|[-1, 1]|gyroscope| jerk|std
+tbodygyrojerkstdz|[-1, 1]|gyroscope| jerk|std
+tbodyaccmagstd|[-1, 1]|accelerometer| signal magnitude|std
+tgravityaccmagstd|[-1, 1]|accelerometer| signal magnitude|std
+tbodyaccjerkmagstd|[-1, 1]|accelerometer| signal magnitude|std
+tbodygyromagstd|[-1, 1]|gyroscope| signal magnitude|std
+tbodygyrojerkmagstd|[-1, 1]|gyroscope| signal magnitude|std
+fbodyaccstdx|[-1, 1]|accelerometer| body acceleration|std
+fbodyaccstdy|[-1, 1]|accelerometer| body acceleration|std
+fbodyaccstdz|[-1, 1]|accelerometer| body acceleration|std
+fbodyaccjerkstdx|[-1, 1]|accelerometer| jerk|std
+fbodyaccjerkstdy|[-1, 1]|accelerometer| jerk|std
+fbodyaccjerkstdz|[-1, 1]|accelerometer| jerk|std
+fbodygyrostdx|[-1, 1]|gyroscope| body acceleration|std
+fbodygyrostdy|[-1, 1]|gyroscope| body acceleration|std
+fbodygyrostdz|[-1, 1]|gyroscope| body acceleration|std
+fbodyaccmagstd|[-1, 1]|accelerometer| signal magnitude|std
+fbodybodyaccjerkmagstd|[-1, 1]|accelerometer| signal magnitude|std
+fbodybodygyromagstd|[-1, 1]|gyroscope| signal magnitude|std
+fbodybodygyrojerkmagstd|[-1, 1]|gyroscope| signal magnitude|std
+
+
 ## Appendix A 
 ### Description of the raw data provided by the original data collectors
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
@@ -53,6 +145,63 @@ The following files are available for the train and test data. Their description
 Notes: 
 - Features are normalized and bounded within [-1,1].
 - Each feature vector is a row on the text file.
+
+Feature Selection:
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+mad(): Median absolute deviation 
+max(): Largest value in array
+min(): Smallest value in array
+sma(): Signal magnitude area
+energy(): Energy measure. Sum of the squares divided by the number of values. 
+iqr(): Interquartile range 
+entropy(): Signal entropy
+arCoeff(): Autorregresion coefficients with Burg order equal to 4
+correlation(): correlation coefficient between two signals
+maxInds(): index of the frequency component with largest magnitude
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+skewness(): skewness of the frequency domain signal 
+kurtosis(): kurtosis of the frequency domain signal 
+bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+angle(): Angle between to vectors.
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
+
 
 For more information about this dataset contact: activityrecognition@smartlab.ws
 
