@@ -22,99 +22,59 @@ Steps performed to create the summary data set Activity_Summary.txt from the raw
 - The original data set included multiple observations for each subject performing each of the six activities.  The summary data set averages across these multiple observations to provide an average measurement for each included feature for each subject and each activity. 
 - The data were written to a text file Activity_Summary.txt to make the data available to a wide array of users working with a variety of software packages.
 
-## Variable List
-|Variable Name|Range|Measuring Device| Other Information|Summary Type|
-| ------------- |-------------| -----|--------|--------|
-|subject|0-30|NA| NA|NA|
-|activity|1-6|NA|See levels list|NA|
-|tbodyaccmeanx|[-1, 1]|accelerometer| body acceleration|mean|
-|tbodyaccmeany|[-1, 1]|accelerometer| body acceleration|mean|
-|tbodyaccmeanz|[-1, 1]|accelerometer| body acceleration|mean|
-|tgravityaccmeanx|[-1, 1]|accelerometer| gravity|mean|
-|tgravityaccmeany|[-1, 1]|accelerometer| gravity|mean|
-|tgravityaccmeanz|[-1, 1]|accelerometer| gravity|mean|
-|tbodyaccjerkmeanx|[-1, 1]|accelerometer| jerk|mean|
-|tbodyaccjerkmeany|[-1, 1]|accelerometer| jerk|mean|
-|tbodyaccjerkmeanz|[-1, 1]|accelerometer| body acceleration|mean|
-|tbodygyromeanx|[-1, 1]|gyroscope| body acceleration|mean|
-|tbodygyromeany|[-1, 1]|gyroscope| body acceleration|mean|
-|tbodygyromeanz|[-1, 1]|gyroscope| body acceleration|mean|
-|tbodygyrojerkmeanx|[-1, 1]|gyroscope| jerk|mean|
-|tbodygyrojerkmeany|[-1, 1]|gyroscope| jerk|mean|
-|tbodygyrojerkmeanz|[-1, 1]|gyroscope| jerk|mean|
-|tbodyaccmagmean|[-1, 1]|accelerometer| signal magnitude|mean|
-|tgravityaccmagmean|[-1, 1]|accelerometer| signal magnitude|mean|
-|tbodyaccjerkmagmean|[-1, 1]|accelerometer| signal magnitude|mean|
-|tbodygyromagmean|[-1, 1]|gyroscope| signal magnitude|mean|
-|tbodygyrojerkmagmean|[-1, 1]|gyroscope| signal magnitude|mean|
-|fbodyaccmeanx|[-1, 1]|accelerometer| body acceleration|mean|
-|fbodyaccmeany|[-1, 1]|accelerometer| body acceleration|mean|
-|fbodyaccmeanz|[-1, 1]|accelerometer| body acceleration|mean|
-|fbodyaccmeanfreqx|[-1, 1]|accelerometer| body acceleration|mean frequency|
-|fbodyaccmeanfreqy|[-1, 1]|accelerometer| body acceleration|mean frequency|
-|fbodyaccmeanfreqz|[-1, 1]|accelerometer| body acceleration|mean frequency|
-|fbodyaccjerkmeanx|[-1, 1]|accelerometer| jerk|mean|
-|fbodyaccjerkmeany|[-1, 1]|accelerometer| jerk|mean|
-|fbodyaccjerkmeanz|[-1, 1]|accelerometer| jerk|mean|
-|fbodyaccjerkmeanfreqx|[-1, 1]|accelerometer| jerk|mean frequency|
-|fbodyaccjerkmeanfreqy|[-1, 1]|accelerometer| jerk|mean frequency|
-|fbodyaccjerkmeanfreqz|[-1, 1]|accelerometer| jerk|mean frequency|
-|fbodygyromeanx|[-1, 1]|gyroscope| body acceleration|mean|
-|fbodygyromeany|[-1, 1]|gyroscope| body acceleration|mean|
-|fbodygyromeanz|[-1, 1]|gyroscope| body acceleration|mean|
-|fbodygyromeanfreqx|[-1, 1]|gyroscope| body acceleration|mean frequency|
-|fbodygyromeanfreqy|[-1, 1]|gyroscope| body acceleration|mean frequency|
-|fbodygyromeanfreqz|[-1, 1]|gyroscope| body acceleration|mean frequency|
-|fbodyaccmagmean|[-1, 1]|accelerometer| body acceleration|mean|
-|fbodyaccmagmeanfreq|[-1, 1]|accelerometer| body acceleration|mean|
-|fbodybodyaccjerkmagmean|[-1, 1]|accelerometer| jerk|mean|
-|fbodybodyaccjerkmagmeanfreq|[-1, 1]|accelerometer| jerk|mean frequency|
-|fbodybodygyromagmean|[-1, 1]|gyroscope| signal magnitude|mean|
-|fbodybodygyromagmeanfreq|[-1, 1]|gyroscope| signal magnitude|mean frequency|
-|fbodybodygyrojerkmagmean|[-1, 1]|gyroscope| signal magnitude|mean|
-|fbodybodygyrojerkmagmeanfreq|[-1, 1]|gyroscope| signal magnitude|mean frequency|
-|angletbodyaccmeangravity|[-1, 1]|accelerometer| angle|mean|
-|angletbodyaccjerkmeangravitymean|[-1, 1]|accelerometer| angle|mean|
-|angletbodygyromeangravitymean|[-1, 1]|gyroscope| angle|mean|
-|angletbodygyrojerkmeangravitymean|[-1, 1]|gyroscope| angle|mean|
-|anglexgravitymean|[-1, 1]|NA| angle|mean|
-|angleygravitymean|[-1, 1]|NA| angle|mean|
-|anglezgravitymean|[-1, 1]|NA| angle|mean|
-|tbodyaccstdx|[-1, 1]|accelerometer| body acceleration|std|
-|tbodyaccstdy|[-1, 1]|accelerometer| body acceleration|std|
-|tbodyaccstdz|[-1, 1]|accelerometer| body acceleration|std|
-|tgravityaccstdx|[-1, 1]|accelerometer| gravity|std|
-|tgravityaccstdy|[-1, 1]|accelerometer| gravity|std|
-|tgravityaccstdz|[-1, 1]|accelerometer| gravity|std|
-|tbodyaccjerkstdx|[-1, 1]|accelerometer| jerk|std|
-|tbodyaccjerkstdy|[-1, 1]|accelerometer| jerk|std|
-|tbodyaccjerkstdz|[-1, 1]|accelerometer| jerk|std|
-|tbodygyrostdx|[-1, 1]|gyroscope| body acceleration|std|
-|tbodygyrostdy|[-1, 1]|gyroscope| body acceleration|std|
-|tbodygyrostdz|[-1, 1]|gyroscope| body acceleration|std|
-|tbodygyrojerkstdx|[-1, 1]|gyroscope| jerk|std|
-|tbodygyrojerkstdy|[-1, 1]|gyroscope| jerk|std|
-|tbodygyrojerkstdz|[-1, 1]|gyroscope| jerk|std|
-|tbodyaccmagstd|[-1, 1]|accelerometer| signal magnitude|std|
-|tgravityaccmagstd|[-1, 1]|accelerometer| signal magnitude|std|
-|tbodyaccjerkmagstd|[-1, 1]|accelerometer| signal magnitude|std|
-|tbodygyromagstd|[-1, 1]|gyroscope| signal magnitude|std|
-|tbodygyrojerkmagstd|[-1, 1]|gyroscope| signal magnitude|std|
-|fbodyaccstdx|[-1, 1]|accelerometer| body acceleration|std|
-|fbodyaccstdy|[-1, 1]|accelerometer| body acceleration|std|
-|fbodyaccstdz|[-1, 1]|accelerometer| body acceleration|std|
-|fbodyaccjerkstdx|[-1, 1]|accelerometer| jerk|std|
-|fbodyaccjerkstdy|[-1, 1]|accelerometer| jerk|std|
-|fbodyaccjerkstdz|[-1, 1]|accelerometer| jerk|std|
-|fbodygyrostdx|[-1, 1]|gyroscope| body acceleration|std|
-|fbodygyrostdy|[-1, 1]|gyroscope| body acceleration|std|
-|fbodygyrostdz|[-1, 1]|gyroscope| body acceleration|std|
-|fbodyaccmagstd|[-1, 1]|accelerometer| signal magnitude|std|
-|fbodybodyaccjerkmagstd|[-1, 1]|accelerometer| signal magnitude|std|
-|fbodybodygyromagstd|[-1, 1]|gyroscope| signal magnitude|std|
-|fbodybodygyrojerkmagstd|[-1, 1]|gyroscope| signal magnitude|std|
 
-Levels list for activity variable: 1=walking, 2=walking upstairs, 3=walking downstairs, 4=sitting, 5=standing, 6=laying
+## Variable List
+
+Subject
+	Subject ID. An integer ranging from 1-30
+
+Activity
+	Activity being performed by the subject when the measurement was taken. Factor variable with 6 levels: 1=walking, 2=walking upstairs, 3=walking downstairs, 4=sitting, 5=standing, 6=laying
+
+Feature Variables
+	561 feature variables created from data collected by the smart phone accelerometer and gyroscope while the subject was performing the various activities.  Feature variables are standardized to range in value from -1 to 1.  Standardizing the variables in this way makes them unitless.  Feature variables were named according to rules described below which include information about what each variable represents.
+
+
+
+## Variable Naming for Feature Variables
+
+To make the feature variable names understandable without
+making them too long, variable names were constructed following a set
+pattern of abbreviations conveying important information about the variable.
+
+  First character = measurement domain
+    t = time
+    f = frequency
+    first character not t or f = other domain
+
+ Measurement Source
+    body = measurement from body movement
+    gravity = measurement from gravity
+
+ Recording Device
+    acc = accelerometer
+    gyro = gyroscope
+
+ Jerk Measurement?
+    jerk = jerk measurement
+    if "jerk" not present in name, not jerk measurement
+
+ Magnitude Measurement?
+    mag = magnitude measurement
+    if "mag" not present in name, not magnitude measurement
+
+ Summary type
+    meanfreq = mean frequency
+    mean = mean
+    std = standard deviation
+
+ Measurement Plane
+    x = x plane
+    y = y plane
+    z = z plane
+
+
+
 
 
 ## Appendix A 
