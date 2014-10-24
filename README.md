@@ -11,8 +11,8 @@
 ### Using the script run_analysis.R
 In order to use the R script run_analysis.R, a user must:
 
-- Download the zipped raw Smart Phone activity data from Raw data were downloaded from on October 20 from
- https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+- Download the zipped raw Smart Phone activity data from
+ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 - Unzip the raw data
 
