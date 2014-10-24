@@ -33,7 +33,13 @@ Subject
 - Subject ID. An integer ranging from 1-30
 
 Activity
-- Activity being performed by the subject when the measurement was taken. Factor variable with 6 levels: 1=walking, 2=walking upstairs, 3=walking downstairs, 4=sitting, 5=standing, 6=laying
+- Activity being performed by the subject when the measurement was taken. Factor variable with 6 levels. 
+	+ 1=walking 
+	+ 2=walking upstairs 
+	+ 3=walking downstairs 
+	+ 4=sitting 
+	+ 5=standing 
+	+ 6=laying
 
 Feature Variables 
 - 561 feature variables created from data collected by the smart phone accelerometer and gyroscope while the subject was performing the various activities.  Feature variables are standardized to range in value from -1 to 1.  Standardizing the variables in this way makes them unitless.  Feature variables were named according to rules described below which include information about what each variable represents.
@@ -46,36 +52,36 @@ To make the feature variable names understandable without
 making them too long, variable names were constructed following a set
 pattern of abbreviations conveying important information about the variable.
 
-	- Measurement domain
-		+ t = time 
-		+ f = frequency 
-		+ first character not t or f = other domain
+- Measurement domain
+	+ t = time 
+	+ f = frequency 
+	+ first character not t or f = other domain
 
-	- Measurement Source 
-		+ body = measurement from body movement 
-		+ gravity = measurement from gravity
+- Measurement Source 
+	+ body = measurement from body movement 
+	+ gravity = measurement from gravity
 
-	- Recording Device 
-		+ acc = accelerometer 
-		+ gyro = gyroscope
+- Recording Device 
+	+ acc = accelerometer 
+	+ gyro = gyroscope
 
-	- Jerk Measurement? 
-		+ jerk = jerk measurement 
-		+ if "jerk" not present in name, not jerk measurement
+- Jerk Measurement? 
+	+ jerk = jerk measurement 
+	+ if "jerk" not present in name, not jerk measurement
 
-	- Magnitude Measurement? 
-		+ mag = magnitude measurement 
-		+ if "mag" not present in name, not magnitude measurement
+- Magnitude Measurement? 
+	+ mag = magnitude measurement 
+	+ if "mag" not present in name, not magnitude measurement
 
-	- Summary type 
-		+ meanfreq = mean frequency 
-		+ mean = mean 
-		+ std = standard deviation
+- Summary type 
+	+ meanfreq = mean frequency 
+	+ mean = mean 
+	+ std = standard deviation
 
-	- Measurement Plane 
-		+ x = x plane 
-		+ y = y plane 
-		+ z = z plane
+- Measurement Plane 
+	+ x = x plane 
+	+ y = y plane 
+	+ z = z plane
 
 
 
