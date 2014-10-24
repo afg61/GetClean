@@ -29,10 +29,10 @@ Steps performed to create the summary data set Activity_Summary.txt from the raw
 
 ## Variable List
 
-Subject 
+**Subject** 
 - Subject ID. An integer ranging from 1-30
 
-Activity
+**Activity**
 - Activity being performed by the subject when the measurement was taken. Factor variable with 6 levels. 
 	+ 1=walking 
 	+ 2=walking upstairs 
@@ -41,7 +41,7 @@ Activity
 	+ 5=standing 
 	+ 6=laying
 
-Feature Variables 
+**Feature Variables** 
 - 561 feature variables created from data collected by the smart phone accelerometer and gyroscope while the subject was performing the various activities.  Feature variables are standardized to range in value from -1 to 1.  Standardizing the variables in this way makes them unitless.  Feature variables were named according to rules described below which include information about what each variable represents.
 
 
