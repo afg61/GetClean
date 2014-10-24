@@ -15,9 +15,7 @@ Steps performed in run_analysis.R to create the summary data set Activity_Summar
 - Combine data from multiple files to create a single file with subject id, activity id, and feature data for all 30 subjects. This involved combining 3 data frames for the training group (with subject id, activity code, and feature data) and 3 data frames for the test group (with subject id, activity, and feature data) then combining the training and test data sets into a single data set.
 
 - Add column names to the data set to identify the columns.  The original study authors provided a text file features.txt with descriptive names for the features that could be used as column names. Names from features.txt were cleaned up to remove special characters and to convert to all lowercase for ease of use and compatibility with other programs.
-To make the feature variable names understandable without
-making them too long, variable names were constructed following a set
-pattern of abbreviations conveying important information about the variable.
+Cleaned up variable names were created by pulling pieces of information from the variable names in features.txt and pasting these together create new variable names following the set pattern described below. These variable names include important information about what each feature variable contains but use abbreviations to keep them from being overly long. 
 
 	+ Measurement domain
 		+ t = time 
