@@ -8,6 +8,16 @@
 - An R script run_analysis.R that creates a tidy data set in text format (Activity_Summary.txt)
 - A codebook describing the raw data used to create the summary data set and the steps involved
 
+### Using the script run_analysis.R
+In order to use the R script run_analysis.R, a user must:
+
+- Download the zipped raw Smart Phone activity data from Raw data were downloaded from on October 20 from
+ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+- Unzip the raw data
+
+- Set the working directory in R to be the directory where the unzipped raw data reside
+
 ### Description of the data processing script run_analysis.R
 
 Steps performed in run_analysis.R to create the summary data set Activity_Summary.txt from the raw data:
