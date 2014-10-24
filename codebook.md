@@ -84,6 +84,8 @@ pattern of abbreviations conveying important information about the variable.
 	+ z = z plane
 
 
+Feature variable names were created by pasting together the abbreviations representing each piece of information in the order listed above.
+
 
 ## Appendix A 
 ### Description of the raw data provided by the original data collectors
